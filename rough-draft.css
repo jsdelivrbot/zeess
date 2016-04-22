@@ -20,15 +20,8 @@ abbr,acronym{border-bottom:.1em dotted;cursor:help;}
 
 /* …and then, some styling. */
 
-/* For hiding things, but not from screen readers */
-.a11y-hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
+
+/* classless (applies directly to elements) */
 
 /* 1.5rem = 15px */
 html { font-size: 62.5%; }
@@ -36,7 +29,7 @@ body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Hasklig", "Fantasque Sans Mono", "Fira Mono", "Hack", "Inconsolata", "Anonymous Pro", monospace;
+  font-family: "Merriweather", "Cardo", serif;
   color: #303330;
   background: #E3E3DE;
   padding: 4rem;
@@ -64,8 +57,10 @@ h6 { font-size: 1.6rem; line-height: 1.6;  letter-spacing:   0;     }
 }
 
 /* Links */
-a { color: #71A397; }
-a:hover { color: #89D470; }
+a { -webkit-transition:color .4s;transition:color .4s;color: #265C83; }
+a:link,a:visited { color: #265C83; }
+a:hover { color: #7FDBFF; }
+a:active { -webkit-transition:color .3s;transition:color .3s;color: #007BE6; }
 
 /* Lists */
 ul { list-style: circle inside; }
@@ -76,7 +71,6 @@ li { margin-bottom: 1rem; }
 /* Spacing */
 p { margin-top: 1rem; }
 p,ul { margin-bottom: 2.5rem; }
-/* I promise, there's a reason for this. */
 img { float: left; margin: 0 1rem 1rem 0; }
 
 /* hr is _very important_. */
@@ -86,5 +80,29 @@ hr {
   border-width: 0;
   border-top: 1px solid #EDC5E8; }
 
-/* Here down: project-specific styles */
+
+/* classes */
+
+.link { text-decoration: none; }
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently */
+}
+
+/* For hiding things, but not from screen readers */
+.a11y-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Here down: put your project-specific styles */
 
