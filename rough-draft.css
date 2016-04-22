@@ -104,5 +104,53 @@ hr {
   overflow: hidden;
 }
 
+/* <img src="foo.jpg" class="fade"> <p class="fade">asdf</p> */
+.fade {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+.fade:hover {
+  opacity: 0.5;
+}
+
+/* tooltips! usage:
+<ul>
+<a href="javascript:void(0)" class="tooltip"><li>foo</li><span>stuff</span></a>
+<a href="javascript:void(0)" class="tooltip"><li>bar</li><span>things</span></a>
+</ul> */
+.tooltip { outline: none; background: #333; color: #ddd }
+.tooltip strong { line-height: 0.8; }
+.tooltip:hover { text-decoration: none; }
+.tooltip span {
+  z-index: 10;
+  display: none;
+  padding: .8em 1em;
+  margin-top: -70px;
+  margin-left: 28px;
+  width: 40px;
+  line-height: 1.2;
+}
+.tooltip:hover span {
+  display: inline;
+  position: absolute;
+  color: #ddd;
+  border: 1px solid #ccc;
+  background: #313131;
+}
+.callout {
+  z-index: 20;
+  position: absolute;
+  top: 30px;
+  border: 0;
+  left: -12px;
+}
+.tooltip span {
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px #BBB;
+}
+
+
 /* Here down: put your project-specific styles */
 
