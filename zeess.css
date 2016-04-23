@@ -7,6 +7,11 @@
  */
 
 @charset  "utf-8";
+@viewport { width: device-width; }
+@at-root { @-moz-viewportwidth: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@-webkit-viewport { width: device-width; }
 
 /* A little reset… */
 html,body{height:100%;width:100%;}
@@ -54,6 +59,28 @@ body {
   margin-left: 10rem;
 }
 
+iframe { border: 0; }
+
+/* semanticky things */
+section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 900px;
+}
+
+article {
+  background: #fff;
+  border: 1.8px solid #d9d9d9;
+  border-radius: 7.2px;
+  padding: 43.2px;
+}
+
+header { margin-bottom: 36px }
+
+footer { margin-top: 36px }
+
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 { margin-top: 2rem; margin-bottom: 1rem; font-weight: 400; }
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;  }
@@ -63,6 +90,9 @@ h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.6rem; line-height: 1.6;  letter-spacing:   0;     }
 
+small { font-size: 1.3rem; }
+em,i { font-style: italic }
+strong, b { font-weight: 600 }
 
 /* Links */
 a { -webkit-transition:color .4s;transition:color .4s;color: #265C83; }
@@ -70,16 +100,42 @@ a:link,a:visited { color: #265C83; }
 a:hover { color: #7FDBFF; }
 a:active { -webkit-transition:color .3s;transition:color .3s;color: #007BE6; }
 
-/* Lists */
+/* Lists, nav, and spacing */
+p, ul, ol, dl, blockquote, hr, pre, table, form, fieldset, figure, address { margin-bottom: 29.7px; }
+
 ul { list-style: circle inside; }
+
 ul { padding-left: 1rem; margin-top: 0; }
+
 ul ul { margin: 1.5rem 0 1.5rem 3rem; font-size: 80%; }
+
 li { margin-bottom: 1rem; }
 
-/* Spacing */
+nav { text-align: center; }
+
+nav ul {
+  list-style: none;
+  margin-left: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+nav ul li:first-child { margin-left: 0; }
+
+nav ul li:last-child { margin-right: 0; }
+
+ol,ul { margin-left: 29.7px; }
+
+li ol, li ul { margin-bottom: 0; }
+
 p { margin-top: 1rem; }
-p,ul { margin-bottom: 2.5rem; }
-img { float: left; margin: 0 1rem 1rem 0; }
+p, ul { margin-bottom: 2.5rem; }
+
 
 /* hr is _very important_. */
 hr {
@@ -88,6 +144,144 @@ hr {
   border-width: 0;
   border-top: 1px solid #EDC5E8; }
 
+/* pre, code, etc. */
+/* being extra nice to people who have nice typefaces */
+
+pre, code, kbd, samp, var, output {
+  font-family: "Fira Code", "Hasklig", "Hack", "Fantasque Sans Mono", Menlo, Monaco, Consolas, monospace;
+  font-size: 16.2px;
+}
+
+pre {
+  border-left: 1.8px solid #96bbe2;
+  line-height: 25.2px;
+  margin-top: 29.7px;
+  overflow: auto;
+  padding-left: 18px;
+}
+
+pre code {
+  background: none;
+  border: 0;
+  line-height: 29.7px;
+  padding: 0;
+}
+
+code {
+  background: #ededed;
+  border: 1.8px solid #ccc;
+  border-radius: 3.6px;
+  display: inline-block;
+  line-height: 18px;
+  padding: 3px 6px 2px;
+}
+
+
+/* tabley stuff */
+th { font-weight: 600; }
+
+td,th {
+  border-bottom: 1.08px solid #ccc;
+  padding: 14.85px 18px;
+}
+
+thead th {
+  border-bottom-width: 2.16px;
+  padding-bottom: 6.3px;
+}
+
+table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+
+/* inputs and things are really just awful */
+[hidden] { display: none !important; }
+
+[role="button"] { cursor: pointer; }
+
+label {
+  display: block;
+  margin-bottom: 14.76px;
+}
+
+input::-moz-focus-inner, button::-moz-focus-inner { display: none; }
+
+input:-webkit-autofill { color: #fff !important; }
+
+textarea { resize: vertical; }
+
+button, input, textarea, select { -webkit-font-smoothing: inherit; }
+
+a, area, button, [role="button"],
+input, label, select, summary, textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+input, textarea, select, button {
+  display: block;
+  padding: 9.9px;
+}
+
+input[type="submit"], input[type="reset"], button {
+  background: #f2f2f2;
+  border-radius: 3.6px;
+  color: #8c8c8c;
+  cursor: pointer;
+  display: inline;
+  margin-bottom: 18px;
+  margin-right: 7.2px;
+  padding: 6.525px 23.4px;
+  text-align: center;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+  background: #d9d9d9;
+  color: #000;
+}
+
+input[type="submit"][disabled], input[type="reset"][disabled], button[disabled] {
+  background: #e6e6e6;
+  color: #b3b3b3;
+}
+
+input[type="submit"], button[type="submit"] {
+  background: #367ac3;
+  color: #fff;
+}
+
+input[type="submit"]:hover, button[type="submit"]:hover {
+  background: #255587;
+  color: #bfbfbf;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"],
+input[type="phone"], input[type="tel"], input[type="number"], input[type="datetime"],
+input[type="date"], input[type="month"], input[type="color"], input[type="time"],
+input[type="search"], input[type="range"], input[type="file"], input[type="datetime-local"],
+select, textarea {
+  border: 1px solid #ccc;
+  margin-bottom: 18px;
+  padding: 5.4px 6.3px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  float: left;
+  line-height: 36px;
+  margin-right: 9px;
+  margin-top: 8.1px;
+}
+
+
+/* img */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
 
 /* Media queries? Okay, fine… */
 @media (max-width: 767px) {
@@ -162,7 +356,31 @@ hr {
 
 /* classes */
 
-.link { text-decoration: none; }
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.link-noline { text-decoration: none; }
+
+.webkit-link-disable {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -230,6 +448,8 @@ hr {
   box-shadow: 2px 2px 4px #BBB;
 }
 
+/* there's a reason for this, i promise you. */
+.z-img { float: left; margin: 0 1rem 1rem 0; }
 
 /* Here down: put your project-specific styles */
 
