@@ -1,8 +1,16 @@
-# wat
+# zeess
 
-## a lil css framework of my own
+(super original name that i came up with all on my own)
 
-# y
+## to use
+### download it
+### or clone it
+### or `npm i -S zeess` it
+### then link to it
 
-## y not
+## faq
+### wat
+#### a lil css framework of my own
+### y
+#### y not
 
