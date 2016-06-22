@@ -215,7 +215,10 @@ input::-moz-focus-inner, button::-moz-focus-inner { display: none; }
 
 input:-webkit-autofill { color: #fff !important; }
 
-textarea { resize: vertical; }
+textarea {
+  resize: vertical;
+  vertical-align: top;
+}
 
 button, input, textarea, select { -webkit-font-smoothing: inherit; }
 
@@ -480,3 +483,22 @@ img {
 
 /* Here down: put your project-specific styles */
 
+/* blinking cuz why not */
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; } to { opacity: 0.0; }
+}
+.blink {
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  -webkit-animation-duration: 1s;
+}
+@keyframes blinker {
+  from { opacity: 1.0; } to { opacity: 0.0; }
+}
+.blink {
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  animation-duration: 1s;
+}
