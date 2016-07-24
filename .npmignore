@@ -48,7 +48,10 @@
 .bower-tmp
 .cabal-sandbox/
 .completer.hist
+.editorconfig
 .fseventsd
+.gitattributes
+.gitignore
 .grunt
 .hpc
 .hsenv
@@ -79,6 +82,8 @@ coverage
 data
 db
 dist
+favicon.io
+index.html
 lib-cov
 logs
 node_modules
