@@ -1,29 +1,30 @@
 {
   "name": "zeess",
-  "version": "0.1.6",
-  "description": "my tiny css framework thingy",
-  "main": "",
-  "scripts": {
-    "test": "",
-    "start": ""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zacanger/zeess.git"
-  },
-  "keywords": [
-    "",
-    ""
-  ],
+  "description": "A reasonably small CSS boilerplate miniframework thing.",
+  "version": "0.1.7",
   "author": {
     "name": "Zac Anger",
     "email": "zac@zacanger.com",
     "url": "http://zacanger.com"
   },
   "license": "WTFPL",
-  "dependencies": {
+  "main": "zeess.css",
+  "scripts": {
+    "test": "echo 'no, sorry'"
   },
-  "devDependencies": {
-  }
+  "homepage": "https://github.com/zacanger/zeess#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zacanger/zeess.git"
+  },
+  "bugs": "https://github.com/zacanger/zeess/issues",
+  "keywords": [
+    "boilerplate",
+    "css",
+    "framework",
+    "micro",
+    "mini"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
 }
-

@@ -1,18 +1,12 @@
 # zeess
 
-(super original name that i came up with all on my own)
+[Demo](http://zacanger.github.io/zeess)
 
-## to use
-### download it
-### or clone it
-### or `npm i -S zeess` it
-### then link to it
+A really pretty small CSS sorta-framework.
 
-## faq
-### wat
-#### a lil css framework of my own
-### y
-#### y not
+To use: download, clone, or `npm i -S zeess`, and link to it.
+
+Docs will show up eventually, I promise.
 
 ## grid
 
@@ -28,6 +22,7 @@ use like: `<div class="split">this stuff is half of its parent's size</div>`
   <div class="col">Col</div>
 </div>
 ```
+
 * `row` is a row
 * `col` is a column
 * `col-tenth` is `10%` width
@@ -35,4 +30,3 @@ use like: `<div class="split">this stuff is half of its parent's size</div>`
 * `col-quarter` is `25%` width
 * `col-third` is `33.3333334%` width
 * `col-half` is `50%` width
-
