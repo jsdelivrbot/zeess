@@ -82,6 +82,7 @@ header { margin-bottom: 2rem; }
 
 footer { margin-top: 2rem; }
 
+blockquote, q { quotes: none; }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 { margin-top: 2rem; margin-bottom: 1rem; font-weight: 400; }
@@ -103,7 +104,18 @@ a:hover { color: #7FDBFF; }
 a:active { -webkit-transition:color .3s;transition:color .3s;color: #007BE6; }
 
 /* Lists, nav, and spacing */
-p, ul, ol, dl, blockquote, hr, pre, table, form, fieldset, figure, address { margin-bottom: 2rem; }
+p,
+ul,
+ol,
+dl,
+blockquote,
+hr,
+pre,
+table,
+form,
+fieldset,
+figure,
+address { margin-bottom: 2rem; }
 
 ul { list-style: circle inside;  padding-left: 1rem; margin-top: 0; }
 ol { list-style: decimal inside; }
@@ -143,7 +155,12 @@ hr {
 /* pre, code, etc. */
 /* being extra nice to people who have nice typefaces */
 
-pre, code, kbd, samp, var, output {
+pre,
+code,
+kbd,
+samp,
+var,
+output {
   font-family: "Fira Code", "Hasklig", "Hack", "Fantasque Sans Mono", Menlo, Monaco, Consolas, monospace;
   font-size: 1.4rem;
 }
@@ -212,20 +229,35 @@ textarea {
   vertical-align: top;
 }
 
-button, input, textarea, select { -webkit-font-smoothing: inherit; }
+button,
+input,
+textarea,
+select { -webkit-font-smoothing: inherit; }
 
-a, area, button, [role="button"],
-input, label, select, summary, textarea {
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
   display: block;
   padding: 0.6rem;
 }
 
-input[type="submit"], input[type="reset"], button {
+input[type="submit"],
+input[type="reset"],
+button {
   background: #f2f2f2;
   border-radius: 2px;
   color: #8c8c8c;
@@ -237,37 +269,56 @@ input[type="submit"], input[type="reset"], button {
   text-align: center;
 }
 
-input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
   background: #d9d9d9;
   color: #000;
 }
 
-input[type="submit"][disabled], input[type="reset"][disabled], button[disabled] {
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+button[disabled] {
   background: #e6e6e6;
   color: #b3b3b3;
 }
 
-input[type="submit"], button[type="submit"] {
+input[type="submit"],
+button[type="submit"] {
   background: #367ac3;
   color: #fff;
 }
 
-input[type="submit"]:hover, button[type="submit"]:hover {
+input[type="submit"]:hover,
+button[type="submit"]:hover {
   background: #255587;
   color: #bfbfbf;
 }
 
-input[type="text"], input[type="password"], input[type="email"], input[type="url"],
-input[type="phone"], input[type="tel"], input[type="number"], input[type="datetime"],
-input[type="date"], input[type="month"], input[type="color"], input[type="time"],
-input[type="search"], input[type="range"], input[type="file"], input[type="datetime-local"],
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="phone"],
+input[type="tel"],
+input[type="number"],
+input[type="datetime"],
+input[type="date"],
+input[type="month"],
+input[type="color"],
+input[type="time"],
+input[type="search"],
+input[type="range"],
+input[type="file"],
+input[type="datetime-local"],
 select, textarea {
   border: 1px solid #ccc;
   margin-bottom: 1.2rem;
   padding: 0.4rem 0.6rem;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   float: left;
   line-height: 1.8;
   margin-right: 0.6rem;
@@ -344,7 +395,8 @@ img {
 
   p abbr[title]:after { content: " (" attr(title) ")" !important; }
 
-  p a[href^="javascript:"]:after,p a[href^="#"]:after { content: "" !important; }
+  p a[href^="javascript:"]:after,
+  p a[href^="#"]:after { content: "" !important; }
 
   p a, p abbr {
     word-wrap: break-word !important;
@@ -451,6 +503,7 @@ img {
   width: 40px;
   line-height: 1.2;
 }
+
 .tooltip:hover span {
   display: inline;
   position: absolute;
@@ -458,6 +511,7 @@ img {
   border: 1px solid #ccc;
   background: #313131;
 }
+
 .callout {
   z-index: 20;
   position: absolute;
@@ -465,6 +519,7 @@ img {
   border: 0;
   left: -12px;
 }
+
 .tooltip span {
   border-radius: 4px;
   box-shadow: 2px 2px 4px #BBB;
@@ -477,23 +532,25 @@ img {
 @-webkit-keyframes blinker { from { opacity: 1.0; } to { opacity: 0.0; } }
 
 .blink {
-  -webkit-animation-name: blinker;
+             -webkit-animation-name: blinker;
+         -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
-  -webkit-animation-duration: 1s;
 }
 
 @keyframes blinker { from { opacity: 1.0; } to { opacity: 0.0; } }
 
 .blink {
-  animation-name: blinker;
+             animation-name: blinker;
+         animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(1.0,0,0,1.0);
-  animation-duration: 1s;
 }
 
 /* button stuff */
-.btn, button, [type=submit] {
+.btn,
+button,
+[type=submit] {
   overflow: hidden;
   margin: 10px;
   padding: 12px 12px;
@@ -521,13 +578,17 @@ img {
   appearance: none;
 }
 
-.btn:hover, button:hover, [type=submit]:hover {
+.btn:hover,
+button:hover,
+[type=submit]:hover {
   -webkit-transition: all 60ms ease;
   transition: all 60ms ease;
   opacity: .85;
 }
 
-.btn:active, button:active, [type=submit]:active {
+.btn:active,
+button:active,
+[type=submit]:active {
   -webkit-transition: all 60ms ease;
   transition: all 60ms ease;
   -webkit-transform: scale(0.97);
@@ -535,7 +596,9 @@ img {
   opacity: .75;
 }
 
-.btn:focus, button:focus, [type=submit]:focus { outline: none; }
+.btn:focus,
+button:focus,
+[type=submit]:focus { outline: none; }
 
 .btn-outline {
   border: 3px solid #fff;
@@ -544,7 +607,8 @@ img {
   transition: all 0.5s ease;
 }
 
-.btn-outline:hover, .btn-outline:active {
+.btn-outline:hover,
+.btn-outline:active {
   color: #000;
   background: #fff;
 }
@@ -556,7 +620,8 @@ img {
   transition: all 0.5s ease;
 }
 
-.btn-outline-inverted:hover, .btn-outline-inverted:active {
+.btn-outline-inverted:hover,
+.btn-outline-inverted:active {
   color: #fff;
   background: #000;
 }
