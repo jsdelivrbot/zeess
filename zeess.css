@@ -14,17 +14,37 @@
  */
 
 /* A little reset… */
-html,body{height:100%;width:100%;}
-html,body,ul,ol,li,form,fieldset,legend{margin:0;padding:0;}
-h1,h2,h3,h4,h5,h6,p{margin-top:0;}
-fieldset,img{border:0;}
-legend{color:#000;}
-sup{vertical-align:text-top;}
-sub{vertical-align:text-bottom;}
-table{border-collapse:collapse;border-spacing:0;}
-caption,th,td{text-align:left;vertical-align:top;font-weight:normal;}
-input,textarea,select{font-size:110%;line-height:1.1;}
-abbr,acronym{border-bottom:.1em dotted;cursor:help;}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+html, body, ul, ol, li,
+form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+fieldset, img { border: 0; }
+legend { color: #000; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  vertical-align: top;
+  font-weight: normal;
+}
+input, textarea, select {
+  font-size: 110%;
+  line-height: 1.1;
+}
+abbr, acronym {
+  border-bottom: .1em dotted;
+  cursor: help;
+}
 
 /* …and then, some styling. */
 
@@ -928,3 +948,44 @@ button:focus,
 }
 
 .btn-controls.inverted i:hover { color: #F2EEFA; }
+
+/*
+ * cursors, all prefixed with c-
+ */
+.c-a      { cursor: auto; }
+.c-a-s    { cursor: all-scroll; }
+.c-al     { cursor: alias; }
+.c-c      { cursor: cell; }
+.c-c-m    { cursor: context-menu; }
+.c-c-r    { cursor: col-resize; }
+.c-co     { cursor: copy; }
+.c-cr     { cursor: crosshair; }
+.c-d      { cursor: default; }
+.c-e-r    { cursor: e-resize; }
+.c-ew-r   { cursor: ew-resize; }
+.c-g      { cursor: grab; }
+.c-h      { cursor: help; }
+.c-m      { cursor: move; }
+.c-n      { cursor: none; }
+.c-n-a    { cursor: not-allowed; }
+.c-n-d    { cursor: no-drop; }
+.c-n-r    { cursor: n-resize; }
+.c-ne-r   { cursor: ne-resize; }
+.c-nesw-r { cursor: nesw-resize; }
+.c-ns-r   { cursor: ns-resize; }
+.c-nw-r   { cursor: nw-resize; }
+.c-nwse-r { cursor: nwse-resize; }
+.c-p      { cursor: pointer; }
+.c-pr     { cursor: progress; }
+.c-r-r    { cursor: row-resize; }
+.c-s-r    { cursor: s-resize; }
+.c-se-r   { cursor: se-resize; }
+.c-sw-r   { cursor: sw-resize; }
+.c-t      { cursor: text; }
+.c-v-t    { cursor: vertical-text; }
+.c-w      { cursor: wait; }
+.c-w-r    { cursor: w-resize; }
+
+/* to use an image, do something like:
+ * .cur-img { cursor: url(image.png), auto; }
+ */
