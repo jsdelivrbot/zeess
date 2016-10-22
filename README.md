@@ -6,6 +6,8 @@ A really pretty small CSS sorta-framework.
 
 To use: download, clone, or `npm i -S zeess`, and link to it.
 
+There's a minified thing.
+
 Docs will show up eventually, I promise.
 
 ## grid
