@@ -8,15 +8,12 @@ To use: download, clone, or `npm i -S zeess`, and link to it.
 
 There's a minified thing.
 
+```html
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/zacanger/zeess/gh-pages/zeess.min.css">
+```
 Docs will show up eventually, I promise.
 
 ## grid
-
-### not flex based
-`.split` is a half a column.
-use like: `<div class="split">this stuff is half of its parent's size</div>`
-
-### flex based
 
 ```html
 <div class="row">
