@@ -480,10 +480,12 @@ img {
 }
 
 /* grid */
+/*
+.col { flex: 0 0 auto; }
+.row { flex-direction: column; }
+*/
 .row { display: flex; }
 .col { flex: 1; }
-.row { flex-direction: column; }
-.col { flex: 0 0 auto; }
 .col-tenth { flex: 0 0 10%; }
 .col-fifth { flex: 0 0 20%; }
 .col-quarter { flex: 0 0 25%; }
