@@ -50,7 +50,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+figure { margin: 0; }
 svg { max-width: 100%; }
+svg:not(:root) { overflow: hidden; }
+mark { background: #ff0; color: #000; }
+dfn { font-style: italic; }
+audio, canvas, video { display: inline-block; }
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
 
 /* …and then, some styling. */
 
@@ -176,10 +185,15 @@ p, ul { margin-bottom: 2.5rem; }
 
 /* hr is _very important_. */
 hr {
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  border-top: 1px solid #ccc;
   border-width: 0;
-  border-top: 1px solid #EDC5E8; }
+  box-sizing: content-box;
+  height: 0;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+}
 
 /* pre, code, etc. */
 /* being extra nice to people who have nice typefaces */
@@ -238,9 +252,8 @@ table {
   overflow-x: auto;
 }
 
-
 /* inputs and things are really just awful */
-[hidden] { display: none !important; }
+[hidden], template { display: none; }
 
 [role="button"] { cursor: pointer; }
 
@@ -249,11 +262,17 @@ label {
   margin-bottom: 0.8rem;
 }
 
-input::-moz-focus-inner, button::-moz-focus-inner { display: none; }
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  display: none;
+}
 
 input:-webkit-autofill { color: #fff !important; }
 
 textarea {
+  overflow: auto;
   resize: vertical;
   vertical-align: top;
 }
@@ -307,9 +326,11 @@ button:hover {
 
 input[type="submit"][disabled],
 input[type="reset"][disabled],
-button[disabled] {
+button[disabled],
+html input[disabled] {
   background: #e6e6e6;
   color: #b3b3b3;
+  cursor: default;
 }
 
 input[type="submit"],
@@ -324,6 +345,16 @@ button[type="submit"]:hover {
   color: #bfbfbf;
 }
 
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -348,10 +379,14 @@ select, textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   float: left;
   line-height: 1.8;
   margin-right: 0.6rem;
   margin-top: 0.8rem;
+  padding: 0;
 }
 
 button, [type=submit] {
