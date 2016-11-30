@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <title>zeess</title>
@@ -12,421 +11,416 @@
     <link rel="shortcut icon" href="favicon.ico">
   </head>
 
-  <body>
-
-    <header>
-      <h1>ZeeSS</h1>
-      <h2>A little demo of a little framework.</h2>
-    </header>
-
-    <header>
-      <h1><a href="https://github.com/zacanger/zeess" title="zeess">On Github</a></h1>
+  <body id="body">
+    <aside id="sidebar" role="aside">
+      <header>
+        <h1 id="title"><a href="#body">ZeeSS</a></h1>
+        <h2><a href="https://github.com/zacanger/zeess" title="zeess">ZeeSS On GitHub</a></h2>
+        <div id="description">
+          <p>A little demo of a little CSS framework.</p>
+          <p>This demo is based on <a href="https://github.com/garethrees/example.html">example.html</a></p>
+        </div>
+      </header>
       <nav>
         <ul>
-          <li><a href="javascript:void(0)" title="A Link">A Link</a></li>
-          <li><a href="javascript:void(0)" title="Link Two">Link Two</a></li>
-          <li><a href="javascript:void(0)" title="Another Link">Another Link</a></li>
-          <li><a href="javascript:void(0)" title="Last Link">Last Link</a></li>
+          <li><a id="headingslink" href="#headings">Headings</a></li>
+          <li><a href="#text">Text</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#tables">Tables</a></li>
         </ul>
       </nav>
-    </header>
+    </aside>
 
-    <section>
-      <h1>Headings &amp; Copy</h1>
-      <h1>First Header h1</h1>
-      <p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-        praesentium voluptatum deleniti atque corrupti quos.
-      </p>
-      <h2>Second header h2</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <h3>Third header h3</h3>
-      <p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-        praesentium voluptatum deleniti atque corrupti quos dolores et quas
-        molestias excepturi sint occaecati cupiditate non provident, similique sunt
-        in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-        fuga. Et harum quidem rerum facilis est et expedita distinctio.
-      </p>
-      <h4>Fourth header h4</h4>
-      <p>
-        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
-        ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-        veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
-        ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
-        qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-        qui dolorem eum fugiat quo voluptas nulla pariatur?"
-      </p>
-      <h5>Fifth header h5</h5>
-      <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-      </p>
-      <h6>Sixth header h6</h6>
-      <p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-        praesentium voluptatum deleniti atque corrupti quos.
-      </p>
-    </section>
+    <main role="main">
 
-    <hr>
+      <article id="article">
+        <header>
+          <hgroup>
+            <h2>An Article Headline</h2>
+            <h2>A longer article subheading that explains the article in a sentence</h2>
+          </hgroup>
+          <span>Published on <time datetime="2011-09-06">Tuesday September 6<sup>th</sup> 2011</time></span>
+        </header>
 
-    <section>
-      <h1>Links</h1>
-      <a href="javascript:void(0)">Sample text link</a>
-      <a href="javascript:void(0)">Sample button link</a>
-    </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-    <hr>
+        <aside>
+          <p>An aside to illustrate a key point in the article, maybe with a list</p>
+          <ul>
+            <li>Lorem ipsum dolor</li>
+            <li>Consectetur adipisicing elit</li>
+            <li>Eiusmod tempor incididunt</li>
+          </ul>
+        </aside>
 
-    <section>
-      <h1>Lists</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <h2>Unordered list</h2>
-      <ul>
-        <li>Orange</li>
-        <li>Apple</li>
-        <li>Rhubarb</li>
-        <li>Rasberry</li>
-        <li>Blueberry</li>
-        <li>Cherry</li>
-      </ul>
+        <footer>
+          <details>
+            <summary>ZeeSS</summary>
+            <p>
+              Copyright Never. Built in <a href="https://neovim.io">Neovim</a> by <a href="http://zacanger.com" title="zacanger">zacanger</a>.
+              <a href="http://twitter.com/zacanger" title=" on Twitter">Twitter</a> &middot;
+              <a href="http://github.com/zacanger" title=" on Github">Github</a>
+            </p>
+          </details>
+        </footer>
 
-      <h2>Ordered list</h2>
-      <ol>
-        <li>First</li>
-        <li>Second</li>
-        <li>Third</li>
-        <li>Fourth</li>
-        <li>Fifth</li>
-        <li>Sixth</li>
-      </ol>
-
-      <h2>Reset List</h2>
-      <ol class="list-reset">
-        <li>Hello</li>
-        <li>I love you</li>
-        <li>Won't you tell</li>
-        <li>Me your name</li>
-        <li>?</li>
-      </ol>
-
-      <h2>Definition list</h2>
-      <dl>
-        <dt>Kick</dt>
-        <dd>808</dd>
-        <dt>Snare</dt>
-        <dd>909</dd>
-      </dl>
-
-      <dl>
-        <dt>Maine</dt>
-        <dd>Augusta</dd>
-        <dt>California</dt>
-        <dd>Sacremento</dd>
-        <dt>Oregon</dt>
-        <dd>Salem</dd>
-        <dt>New York</dt>
-        <dd>Albany</dd>
-      </dl>
-
-      <dl>
-        <dt>Ascender</dt>
-        <dd>The part of certain lowercase letters that extends above the x-height of a font.</dd>
-        <dt>Font</dt>
-        <dd>
-          Traditionally, a complete set of characters for one typeface at
-          one particular type size. Often used more loosely as a synonym for
-          "typeface".
-        </dd>
-        <dt>Golden Section</dt>
-        <dd>
-          The ideal proportion according to the ancient Greeks. It is visualized as the
-          division of a line into two unequal segments in such a way that the ratio of the
-          smaller segment to the larger segment is equal to the ratio of the larger to the
-          whole. It is usually defined as 21:34, that is, 21/34 and 34/(21+34) both equal
-          approximately 0.618. A rectangle whose sides are of this proportion is called a
-          "golden rectangle". Golden rectangles can be found in the proportions of the
-          Parthenon and many medieval manuscripts.
-        </dd>
-      </dl>
-    </section>
-
-    <section>
-      <h1>Forms</h1>
-      <form>
-        <fieldset>
-          <!-- Fieldsets must contain legends. For IE. Because... IE. -->
-          <legend>Legend Example</legend>
-
-          <div>
-            <label>Text Input Label</label>
-            <input type="text">
-            <p>Helper text if necessary.</p>
-          </div>
-
-          <div>
-            <label>Password</label>
-            <input type="password">
-            <p>Error messages when appropriate.</p>
-          </div>
-
-          <div>
-            <label for="first-name">First Name</label>
-            <input type="text">
-          </div>
-
-          <div>
-            <label for="last-name">Last Name</label>
-            <input type="text">
-          </div>
-
-          <div>
-            <label for="email">Email</label>
-            <input type="email">
-          </div>
-
-          <div>
-            <label for="gender">Dropdown</label>
-            <select>
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select>
-          </div>
-
-          <div>
-            <label>Radio Buttons</label>
-            <ul class="list-reset">
-              <li><label><input type="radio">Label 1</label></li>
-              <li><label><input type="radio">Label 2</label></li>
-              <li><label><input type="radio">Label 3</label></li>
-            </ul>
-          </div>
-
-          <div>
-            <label for="url">URL Input</label>
-            <input type="url" placeholder="http://zacanger.com">
-          </div>
-
-          <div>
-            <label>Textarea</label>
-            <textarea></textarea>
-          </div>
-
-          <div>
-            <label><input type="checkbox">This is a checkbox.</label>
-          </div>
-
-          <div>
-            <input type="submit" value="Submit">
-          </div>
-
-        </fieldset>
-      </form>
-    </section>
-
-    <section>
-      <h1>Buttons</h1>
-      <button>A button</button>
-      <button>A button</button>
-      <button>A large button</button>
-    </section>
-
-    <hr>
-
-    <section>
-      <h1>An Example Article</h1>
-      <article>
-        <h1>Title</h1>
-        <p>
-          Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit</strong>, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud <em>exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat</em>. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <blockquote>
-          <p>
-            This is a pull quote.
-            <br><a href="javascript:void(0)">&mdash; Author</a>
-          </p>
-        </blockquote>
-
-        <p>
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-          consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
-          ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-          veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi
-          ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
-          qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-          qui dolorem eum fugiat quo voluptas nulla pariatur?"
-        </p>
-
-        <p>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-          praesentium voluptatum deleniti atque corrupti quos dolores et quas
-          molestias excepturi sint occaecati cupiditate non provident, similique sunt
-          in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
-          fuga. Et harum quidem rerum facilis est et expedita distinctio.
-        </p>
       </article>
-    </section>
 
-    <hr>
+      <article id="headings">
+        <h1>A h1 header</h1>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
-    <section>
-      <h1>Code examples</h1>
-      <code>
+        <h1><a href="#" title="#">A linked h1 header</a></h1>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <h2>A h2 header</h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <h2><a href="#" title="#">A linked h2 header</a></h2>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <h3>A h3 header</h3>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <h3><a href="#" title="#">A linked h3 header</a></h3>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <h4>A h4 header</h4>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <h4><a href="#" title="#">A linked h4 header</a></h4>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <h5>A h5 header</h5>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <h5><a href="#" title="#">A linked h5 header</a></h5>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <h6>A h6 header</h6>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <h6><a href="#" title="#">A linked h6 header</a></h6>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      </article>
+
+      <article id="text">
+        <h2>Full sentence</h2>
+        <p><strong>Pellentesque habitant morbi tristique</strong> senectus  et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+        <h2>Text-level semantics</h2>
+
+        <p>
+          The <a href="#">a element</a> example<br>
+          The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples<br>
+          The <b>b element</b> example<br>
+          The <cite>cite element</cite> example<br>
+          The <code>code element</code> example<br>
+          The <del>del element</del> example<br>
+          The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples<br>
+          The <em>em element</em> example<br>
+          The <i>i element</i> example<br>
+          The img element <img src="http://placekitten.com/16/16" alt=""> example<br>
+          The <ins>ins element</ins> example<br>
+          The <kbd>kbd element</kbd> example<br>
+          The <mark>mark element</mark> example<br>
+          The <q>q element <q>inside</q> a q element</q> example<br>
+          The <s>s element</s> example<br>
+          The <samp>samp element</samp> example<br>
+          The <small>small element</small> example<br>
+          The <span>span element</span> example<br>
+          The <strong>strong element</strong> example<br>
+          The <sub>sub element</sub> example<br>
+          The <sup>sup element</sup> example<br>
+          The <var>var element</var> example<br>
+          The <u>u element</u> example
+        </p>
+
+        <h2>Blockquote</h2>
+        <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+        <h2>pre</h2>
+
+        <pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.</pre>
+
         <pre>
-sudo ipfw pipe 1 config bw 256KByte/s
-sudo ipfw add 1 pipe 1 src-port 3000
+            <code>
+&lt;html>
+    &lt;head>
+    &lt;/head>
+    &lt;body>
+        &lt;div class="main"> &lt;div>
+    &lt;/body>
+&lt;/html>
+            </code>
         </pre>
-      </code>
-    </section>
 
-  <hr>
+      </article>
 
-  <section>
-    <h1>We're getting close!</h1>
-    <progress value="80" max="100">80 %</progress>
-    <p>We are this close to the goal: <meter min="0" max="1000" value="824">$824</meter>.</p>
-  </section>
+      <article id="lists">
 
-  <section>
+        <h2>Ordered List</h2>
+        <ol>
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+          <li><a href="#" title="#">Aliquam tincidunt mauris eu risus.</a></li>
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. This bullet tests content going onto two lines</li>
+        </ol>
 
-    <header>
-      <h1>Random Stuff</h1>
-    </header>
+        <h2>Un-ordered list</h2>
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+          <li><a href="#" title="#">Aliquam tincidunt mauris eu risus.</a></li>
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. This bullet tests content going onto two lines</li>
+        </ul>
 
-    <small>This is for things like copyright info.</small>
-    <br><s>Content that isn't accurate or relevant anymore.</s>
-    <br><span>Generic span wrapper</span>
-    <br><abbr>How do do things what?</abbr>
-    <p>This is inline text with <sub>subscript</sub> and <sup>superscript</sup> elements.</p>
+        <h2>Definition List</h2>
+        <dl>
+          <dt>Definition Title</dt>
+          <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</dd>
+          <dt>Lorem ipsum dolor sit amet</dt>
+          <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris commodo consequat.</dd>
+        </dl>
 
-    <p>
-      <var>f</var>(<var>x</var>) = <var>a</var><sub>0</sub> + <var>a</var><sub>1</sub><var>x</var> +
-      <var>a</var><sub>2</sub><var>x</var><sup>2</sup>, where <var>a</var><sup>2</sup> ≠ 0
-    </p>
 
-    <time datetime="2016-04-22" pubdate>22 April, 2016.</time>
-  </section>
+        <h2>Reset List</h2>
+        <ol class="list-reset">
+          <li>Hello</li>
+          <li>I love you</li>
+          <li>Won't you tell</li>
+          <li>Me your name</li>
+          <li>?</li>
+        </ol>
 
-  <section>
-    <figure>
-      <img src="http://placekitten.com/g/960/320" alt="Figure Example">
-      <figcaption>
-        Photo of a kitten. Yay, kitten.
-      </figcaption>
-    </figure>
-  </section>
+        <h2>Nested Lists</h2>
+        <ul>
+          <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+          <li>
+            Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+              <li>
+                Aliquam tincidunt mauris eu risus:
+                <ol>
+                  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                  <li>Aliquam tincidunt mauris eu risus.</li>
+                  <li>Vestibulum auctor dapibus neque.</li>
+                </ol>
+              </li>
+              <li>Vestibulum auctor dapibus neque.</li>
+            </ul>
+          </li>
+          <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+          <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+        </ul>
 
-  <section>
-    <!--
-    http://www.w3.org/html/wg/drafts/html/master/text-level-semantics.html#the-samp-element
-    -->
-    <samp>
-      <pre>
-        [z:~/Dropbox/work/repos/zeess] gh-pages ± <kbd>ls -Agoh</kbd>
-        total 60K
-        drwxr-xr-x 8 4.0K Apr 22 22:45 .git/
-        drwxr-xr-x 3 4.0K Apr 22 21:59 x/
-        -rw-r--r-- 1  373 Apr 22 16:06 .editorconfig
-        -rw-r--r-- 1  318 Apr 22 21:25 favicon.ico
-        -rw-r--r-- 1 1.7K Apr 22 16:08 .gitattributes
-        -rw-r--r-- 1  118 Apr 22 16:08 .gitignore
-        -rw-r--r-- 1  13K Apr 22 22:45 index.html
-        -rw-r--r-- 1  474 Apr 22 22:23 package.json
-        -rw-r--r-- 1  224 Apr 22 21:44 README.md
-        -rw-r--r-- 1 9.7K Apr 22 22:23 zeess.css
-        </pre>
-      </samp>
-    </section>
+      </article>
 
-    <section>
-      <h1>Tables</h1>
+      <article id="media">
+        <h2>Embedded content</h2>
 
-      <!-- TFOOT needs to be before TBODY within TABLE so that useragents can render the foot
-      before receiving all rows.
-      TBODY is always required except when TABLE only contains one body and no head or foot.
-      TBODY end can be omitted safely.
-      THEAD and TFOOT start tags are required when those sections are present. Their closing
-      tags can be omitted.
-      -->
+        <h3>audio</h3>
 
-      <table>
-        <caption>This is a caption for a table</caption>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Date</th>
-            <th>Address</th>
-          </tr>
-        </thead>
-        <tfoot>
-          <tr>
-            <td>Table footer info</td>
-          </tr>
-        </tfoot>
-        <tbody>
-          <tr>
-            <td>#999-32ac</td>
-            <td>First Name</td>
-            <td>13 May, 2013</td>
-            <td>999 Spruce Lane, Somewhere, CA 94101</td>
-          </tr>
-          <tr>
-            <td>#888-32dd</td>
-            <td>Sample Name</td>
-            <td>17 May, 1984</td>
-            <td>999 Spruce Lane, Somewhere, CA 94101</td>
-          </tr>
-        </tbody>
-      </table>
+        <audio controls></audio>
+        <audio></audio>
 
-    </section>
-    <section>
-      <h1>Grid</h1>
-      <div class="row">
-        <div class="col">col</div>
-        <div class="col">col</div>
-      </div>
-      <div class="row">
-        <div class="col-third">col-third</div>
-        <div class="col-third">col-third</div>
-        <div class="col-third">col-third</div>
-      </div>
-      <div class="row">
-        <div class="col-half">col-half</div>
-        <div class="col-quarter">col-quarter</div>
-        <div class="col-quarter">col-quarter</div>
-      </div>
-    </section>
+        <h3>img</h3>
 
-  <section>
-    <h1>Footer</h1>
-    <footer>
-      <p>Copyright Never. Built in <a href="https://neovim.io">Neovim</a> by <a href="http://zacanger.com" title="zacanger">zacanger</a>.
-        <a href="http://twitter.com/zacanger" title=" on Twitter">Twitter</a> &middot;
-        <a href="http://github.com/zacanger" title=" on Github">Github</a>
-      </p>
-    </footer>
-  </section>
-  </body>
-</html>
+        <img src="http://placekitten.com/100/100" alt="">
+        <a href="#"><img src="http://placekitten.com/100/100" alt=""></a>
 
+        <h3>figure</h3>
+
+        <figure>
+          <img src="http://placekitten.com/400/200" alt="">
+          <figcaption>Figcaption content</figcaption>
+        </figure>
+
+
+        <h3>svg</h3>
+
+        <svg width="100px" height="100px">
+          <circle cx="100" cy="100" r="100" fill="#ff0000" />
+          </svg>
+
+          <h3>video</h3>
+
+          <video controls></video>
+          <video></video>
+        </article>
+
+        <article id="forms">
+
+          <h3>Form</h3>
+          <!--
+          Minimal semantic form markup, based on the work of Sam Croft
+          http://samcroft.co.uk/2011/minimal-form-markup-simple-slender-and-semantic/
+          -->
+          <form>
+            <fieldset>
+              <legend>Inputs as descendents of labels (form legend)</legend>
+              <label>
+                <b>Text input</b>
+                <input type="text" value="default value">
+              </label>
+              <label>
+                <b>Email input</b>
+                <input type="email">
+              </label>
+              <label>
+                <b>Search input</b>
+                <input type="search">
+              </label>
+              <label>
+                <b>Tel input</b>
+                <input type="tel">
+              </label>
+              <label>
+                <b>URL input</b>
+                <input type="url" placeholder="http://">
+              </label>
+              <label>
+                <b>Password input</b>
+                <input type="password" value="password">
+              </label>
+              <label>
+                <b>File input</b>
+                <input type="file">
+              </label>
+              <label>
+                <b>Radio input</b>
+                <input type="radio" name="rad">
+              </label>
+              <label>
+                <b>Checkbox input</b>
+                <input type="checkbox">
+              </label>
+              <label>
+                <input type="radio" name="rad"> Radio input
+              </label>
+              <label>
+                <input type="checkbox"> Checkbox input
+              </label>
+              <label>
+                <b>Select field</b>
+                <select>
+                  <option>Option 01</option>
+                  <option>Option 02</option>
+                </select>
+              </label>
+              <label>
+                <b>Textarea</b>
+                <textarea cols="30" rows="5" >Textarea text</textarea>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Clickable inputs and buttons</legend>
+              <input type="image" src="http://placekitten.com/90/24" alt="Image (input)">
+              <input type="reset" value="Reset (input)">
+              <input type="button" value="Button (input)">
+              <input type="submit" value="Submit (input)">
+              <button type="reset">Reset (button)</button>
+              <button type="button">Button (button)</button>
+              <button type="submit">Submit (button)</button>
+            </fieldset>
+
+            <fieldset id="boxsize">
+              <legend>box-sizing tests</legend>
+              <div><input type="text" value="text"></div>
+              <div><input type="email" value="email"></div>
+              <div><input type="search" value="search"></div>
+              <div><input type="url" value="http://example.com"></div>
+              <div><input type="password" value="password"></div>
+
+              <div><input type="color" value="#000000"></div>
+              <div><input type="number" value="5"></div>
+              <div><input type="range" value="10"></div>
+              <div><input type="date" value="1970-01-01"></div>
+              <div><input type="month" value="1970-01"></div>
+              <div><input type="week" value="1970-W01"></div>
+              <div><input type="time" value="18:23"></div>
+              <div><input type="datetime" value="1970-01-01T00:00:00Z"></div>
+              <div><input type="datetime-local" value="1970-01-01T00:00"></div>
+
+              <div><input type="radio"></div>
+              <div><input type="checkbox"></div>
+
+              <div><select><option>Option 01</option><option>Option 02</option></select></div>
+              <div><textarea cols="30" rows="5" >Textarea text</textarea></div>
+
+              <div><input type="image" src="http://placekitten.com/90/24" alt="Image (input)"></div>
+              <div><input type="reset" value="Reset (input)"></div>
+              <div><input type="button" value="Button (input)"></div>
+              <div><input type="submit" value="Submit (input)"></div>
+
+              <div><button type="reset">Reset (button)</button></div>
+              <div><button type="button">Button (button)</button></div>
+              <div><button type="submit">Submit (button)</button></div>
+            </fieldset>
+          </form>
+        </article>
+
+        <article id="tables">
+
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Gender</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Gender</th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>John Smith</td>
+                <td>555 - 3246591</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>Lucy Carter</td>
+                <td>555 - 6327445</td>
+                <td>Female</td>
+              </tr>
+              <tr>
+                <td>Simon Fletcher</td>
+                <td>555 - 2335213</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>Jeremy Edwards</td>
+                <td>555 - 4297642</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>Sarah Jones</td>
+                <td>555 - 6678903</td>
+                <td>Female</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </article>
+
+        <section>
+          <h2>Progress and Meter</h2>
+          <progress value="80" max="100">80 %</progress>
+          <p>We are this close to the goal: <meter min="0" max="1000" value="824">$824</meter>.</p>
+        </section>
+
+
+      </main>
+    </body>
+  </html>
