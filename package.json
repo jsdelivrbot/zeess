@@ -1,7 +1,7 @@
 {
   "name": "zeess",
   "description": "A reasonably small CSS boilerplate miniframework thing.",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "author": {
     "name": "Zac Anger",
     "email": "zac@zacanger.com",
