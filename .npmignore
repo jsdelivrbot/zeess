@@ -73,6 +73,7 @@ _build/
 _references.js
 bower_components
 build.js
+build.sh
 build/Release
 bundle
 bundle.js
@@ -93,3 +94,4 @@ pids
 public/lib
 src/.webpack.js
 x/
+zeess.css
