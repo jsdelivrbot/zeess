@@ -1,7 +1,7 @@
 {
   "name": "zeess",
   "description": "A reasonably small CSS boilerplate miniframework thing.",
-  "version": "0.4.5",
+  "version": "0.5.0",
   "author": {
     "name": "Zac Anger",
     "email": "zac@zacanger.com",
@@ -9,7 +9,7 @@
   },
   "license": "WTFPL",
   "scripts": {
-    "build": "csso zeess.css zeess.min.css"
+    "build": "./build.sh"
   },
   "homepage": "http://zacanger.github.io/zeess/",
   "repository": {
@@ -26,7 +26,9 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "csso": "^2.3.0"
+    "autoprefixer": "^6.6.1",
+    "cssnano": "^3.10.0",
+    "postcss-cli-simple": "^1.0.3"
   },
   "style": "zeess.min.css"
 }
