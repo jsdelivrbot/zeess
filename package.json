@@ -1,7 +1,7 @@
 {
   "name": "zeess",
   "description": "A reasonably small CSS boilerplate miniframework thing.",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "author": {
     "name": "Zac Anger",
     "email": "zac@zacanger.com",
@@ -26,7 +26,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^6.6.1",
+    "autoprefixer": "^6.7.2",
     "cssnano": "^3.10.0",
     "postcss-cli-simple": "^1.0.3"
   },
