@@ -2,6 +2,8 @@
 
 [Demo](http://zacanger.github.io/zeess)
 
+[npm](http://npm.im/zeess)
+
 A really pretty small CSS sorta-framework.
 
 To use: download, clone, or `npm i -S zeess`, and link to it.
