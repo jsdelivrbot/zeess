@@ -26,7 +26,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "7.1.1",
+    "autoprefixer": "7.1.5",
     "cssnano": "3.10.0",
     "postcss-cli-simple": "1.0.4"
   },
